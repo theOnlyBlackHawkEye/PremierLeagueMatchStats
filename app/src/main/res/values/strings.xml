@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PL Match Stats</string>
+    <string name="home_team_name">Home Team</string>
+    <string name="away_team_name">Away Team</string>
+    <string name="goals_stat_name">Goals</string>
+    <string name="corners_stat_name">Corners</string>
+    <string name="off_sides_stat_name">Off Sides</string>
+    <string name="fouls_stat_name">Fouls</string>
+    <string name="yellow_cards_stat_name">Yellow Cards</string>
+    <string name="red_cards_stat_name">Red Cards</string>
+    <string name="background_image_description">Premier League Logo</string>
+    <string name="goal_button_text">Goal</string>
+    <string name="corner_button_text">Corner</string>
+    <string name="off_side_button_text">Off Side</string>
+    <string name="foul_button_text">Foul</string>
+    <string name="yellow_card_button_text">Yellow Card</string>
+    <string name="red_card_button_text">Red Card</string>
+    <string name="reset_button_text">Reset</string>
+</resources>

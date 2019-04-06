@@ -1,0 +1,269 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff015b"
+    android:paddingTop="16dp"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/teamNameStyle"
+                    android:text="@string/home_team_name" />
+
+                <TextView
+                    style="@style/teamNameStyle"
+                    android:text="@string/away_team_name" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_score"
+                    style="@style/statsText"
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp" />
+
+                <TextView
+                    style="@style/statsName"
+                    android:text="@string/goals_stat_name" />
+
+                <TextView
+                    android:id="@+id/away_score"
+                    style="@style/statsText"
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_corners"
+                    style="@style/statsText" />
+
+                <TextView
+                    style="@style/statsName"
+                    android:text="@string/corners_stat_name" />
+
+                <TextView
+                    android:id="@+id/away_corners"
+                    style="@style/statsText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_offsides"
+                    style="@style/statsText" />
+
+                <TextView
+                    style="@style/statsName"
+                    android:text="@string/off_sides_stat_name" />
+
+                <TextView
+                    android:id="@+id/away_offsides"
+                    style="@style/statsText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_fouls"
+                    style="@style/statsText" />
+
+                <TextView
+                    style="@style/statsName"
+                    android:text="@string/fouls_stat_name" />
+
+                <TextView
+                    android:id="@+id/away_fouls"
+                    style="@style/statsText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_yellow_cards"
+                    style="@style/statsText"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    style="@style/statsName"
+                    android:text="@string/yellow_cards_stat_name"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:id="@+id/away_yellow_cards"
+                    style="@style/statsText"
+                    android:textColor="#FFFF00" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_red_cards"
+                    style="@style/statsText"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <TextView
+                    style="@style/statsName"
+                    android:text="@string/red_cards_stat_name"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <TextView
+                    android:id="@+id/away_red_cards"
+                    style="@style/statsText"
+                    android:textColor="@android:color/holo_red_dark" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:contentDescription="@string/background_image_description"
+                android:scaleType="fitCenter"
+                android:src="@drawable/premier_league_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="setGoalsForHomeTeam"
+                        android:text="@string/goal_button_text" />
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="setCornersForHomeTeam"
+                        android:text="@string/corner_button_text" />
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="setOffSidesOnHomeTeam"
+                        android:text="@string/off_side_button_text" />
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="setFoulsOnHomeTeam"
+                        android:text="@string/foul_button_text" />
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="setYellowCardsForHomeTeam"
+                        android:text="@string/yellow_card_button_text" />
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="setRedCardsForHomeTeam"
+                        android:text="@string/red_card_button_text" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="setGoalsForAwayTeam"
+                        android:text="@string/goal_button_text" />
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="setCornersForAwayTeam"
+                        android:text="@string/corner_button_text" />
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="setOffSidesOnAwayTeam"
+                        android:text="@string/off_side_button_text" />
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="setFoulsOnAwayTeam"
+                        android:text="@string/foul_button_text" />
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="setYellowCardsForAwayTeam"
+                        android:text="@string/yellow_card_button_text" />
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="setRedCardsForAwayTeam"
+                        android:text="@string/red_card_button_text" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/capital"
+            android:onClick="resetBoard"
+            android:text="@string/reset_button_text"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>
